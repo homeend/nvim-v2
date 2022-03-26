@@ -24,7 +24,7 @@ vim.opt.listchars = "tab:│ ,trail:·,nbsp:+"
 vim.opt.number = true -- set numbered lines
 vim.opt.numberwidth = 1 -- set number column width to 2 {default 4}
 vim.opt.pumheight = 10 -- pop up menu height
-vim.opt.relativenumber = false -- set relative numbered lines
+vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.scrolloff = 4 -- is one of my fav
 vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
 vim.opt.showmode = false -- we don't need to see things like -- INSERT -- anymore
@@ -47,6 +47,8 @@ vim.opt.undofile = true -- enable persistent undo
 vim.opt.updatetime = 300 -- faster completion
 vim.opt.wrap = true -- display lines as one long line
 vim.opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program) it is not allowed to be edited
+vim.opt.mouse = "a"
+vim.opt.errorbells = false
 
 vim.opt.showtabline = 2 -- always show tabs
 vim.opt.laststatus = 2 -- hide statusline

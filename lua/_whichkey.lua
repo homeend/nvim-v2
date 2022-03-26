@@ -124,6 +124,12 @@ local which_key = {
 			l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
 			r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
 		},
+    n = {
+      ":tabnew<CR>", "New tab"
+    },
+    r = {
+      ":sp<CR> :term<CR> :resize 20N<CR> i", "Open terminal"
+    },
 	},
 }
 
@@ -145,6 +151,10 @@ map("n", "<C-h>", ":wincmd h<CR>")
 map("n", "<C-j>", ":wincmd j<CR>")
 map("n", "<C-k>", ":wincmd k<CR>")
 map("n", "<C-l>", ":wincmd l<CR>")
+
+--map("n", "<leader>r", ":sp<CR> :term<CR> :resize 20N<CR> i")
+--map("n", "<leader>n", ":tabnew<CR>")
+map("t", "<Esc>", "<C-\\><C-n>")
 
 local wk = require("which-key")
 wk.setup(which_key.setup)

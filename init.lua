@@ -4,8 +4,8 @@ require("_lsp")
 require("_treesitter")
 require("_telescope")
 require("_whichkey")
-require("_statusline")
 require("_null-ls")
+require("_terminal")
 
 vim.cmd("colorscheme walh-nord")
 -------------------- HELPERS -------------------------------
@@ -25,3 +25,6 @@ opt.wrap = false
 cmd [[
 com! JsonIndent %!python -m json.tool
 ]]
+
+-- important to import after colorscheme
+require("_statusline")

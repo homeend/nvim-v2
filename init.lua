@@ -7,7 +7,7 @@ require("_whichkey")
 require("_null-ls")
 require("_terminal")
 
-vim.cmd("colorscheme walh-nord")
+vim.cmd("colorscheme tokyonight")
 -------------------- HELPERS -------------------------------
 local cmd = vim.cmd  -- to execute Vim commands e.g. cmd('pwd')
 local fn = vim.fn    -- to call Vim functions e.g. fn.bufnr()

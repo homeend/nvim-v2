@@ -37,7 +37,7 @@ return packer.startup(function()
   })
   use({
     "nvim-telescope/telescope.nvim",
-    requires = { "nvim-lua/plenary.nvim" },
+    requires = {{ "nvim-lua/plenary.nvim" }, { 'nvim-telescope/telescope-live-grep-raw.nvim' }}
   })
   use { "nvim-telescope/telescope-file-browser.nvim" }
   use({
@@ -75,6 +75,7 @@ return packer.startup(function()
   })
   use 'folke/tokyonight.nvim'
   use 'mhinz/vim-startify'
+  use "EdenEast/nightfox.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

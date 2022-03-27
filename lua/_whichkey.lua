@@ -138,8 +138,14 @@ local which_key = {
     n = {
       ":tabnew<CR>", "New tab"
     },
+    m = {
+      ":CommentToggle<CR>", "Toogle comment"
+    },
     r = {
-      ":sp<CR> :term<CR> :resize 20N<CR> i", "Open terminal"
+      ":sp<CR> :resize 20N<CR> :term<CR>", "Open terminal"
+    },
+    G = {
+      ":lua require(\"telescope\").extensions.live_grep_raw.live_grep_raw()<CR>", "RG"
     },
 	},
 }
